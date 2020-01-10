@@ -1,0 +1,31 @@
+harnessApiVersion: '1.0'
+type: ARTIFACTORY
+password: amazonkms:NUVq-7QeQOW6Cf_EWj1M0A
+url: https://harness.jfrog.io/harness
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      entityNames:
+      - PCF-App
+      filterType: SELECTED
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+  - appFilter:
+      entityNames:
+      - PCF-App
+      filterType: SELECTED
+    envFilter:
+      filterTypes:
+      - NON_PROD
+username: admin

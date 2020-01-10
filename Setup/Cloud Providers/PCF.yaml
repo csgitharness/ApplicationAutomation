@@ -1,0 +1,21 @@
+harnessApiVersion: '1.0'
+type: PCF
+endpointUrl: api.run.pivotal.io
+password: amazonkms:X8UQP9mSQomyaEJhI8RlTQ
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      entityNames:
+      - PCF-App
+      filterType: SELECTED
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      entityNames:
+      - PCF-App
+      filterType: SELECTED
+    envFilter:
+      filterTypes:
+      - NON_PROD
+username: venkat.padmanabhan@harness.io

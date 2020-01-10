@@ -1,0 +1,17 @@
+harnessApiVersion: '1.0'
+type: NEXUS
+password: azurevault:gryjMghsRiuaxCNjEoMe1g
+url: http://174.129.83.125:8081/nexus
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+username: admin

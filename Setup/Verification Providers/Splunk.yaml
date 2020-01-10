@@ -1,0 +1,17 @@
+harnessApiVersion: '1.0'
+type: SPLUNK
+password: safeharness:Ui-MioQaTfSOHlXNphjzYw
+splunkUrl: https://input-prd-p-429h4vj2lsng.cloud.splunk.com:8089/
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+username: harness-api

@@ -1,0 +1,17 @@
+harnessApiVersion: '1.0'
+type: NEXUS
+password: azurevault:Aw3q5343Q6OV9BGpcNjPxQ
+url: https://nexus2.harness.io/
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+username: admin

@@ -1,0 +1,15 @@
+harnessApiVersion: '1.0'
+type: NEW_RELIC
+apiKey: safeharness:59yju8KEReaFvEq-z6pXQg
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD

@@ -1,0 +1,16 @@
+harnessApiVersion: '1.0'
+type: TAG
+tag:
+- name: AppTag
+- name: CloudProvider
+- name: Custom tag
+- name: EnvType
+- name: EnvironmentTag
+- name: Module
+- name: ServiceTag
+- name: Team
+- name: demo
+- name: env
+- name: sample
+- name: team
+- name: type

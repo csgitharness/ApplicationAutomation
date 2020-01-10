@@ -1,0 +1,17 @@
+harnessApiVersion: '1.0'
+type: DOCKER
+password: azurevault:X3KdrrwdRSu9VIMuQwJG8Q
+url: https://index.docker.io/v2/
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+username: harnesstodolist

@@ -1,0 +1,18 @@
+harnessApiVersion: '1.0'
+type: APP_DYNAMICS
+accountName: harness-prod
+controllerUrl: https://harness-prod.saas.appdynamics.com/controller
+password: safeharness:ss6dFA6gRsCk6E8uRiTJpg
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+username: raghu@harness.io

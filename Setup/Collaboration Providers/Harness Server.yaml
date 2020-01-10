@@ -1,0 +1,34 @@
+harnessApiVersion: '1.0'
+type: SMTP
+fromAddress: noreply@harness.io
+host: smtp.sendgrid.net
+password: azurevault:Vkm-bJUOTnij7NLQsTeKDg
+port: 465
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      entityNames:
+      - PCF-App
+      filterType: SELECTED
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+  - appFilter:
+      entityNames:
+      - PCF-App
+      filterType: SELECTED
+    envFilter:
+      filterTypes:
+      - NON_PROD
+useSSL: true
+username: apikey

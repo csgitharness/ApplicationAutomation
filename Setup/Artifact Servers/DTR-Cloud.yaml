@@ -1,0 +1,29 @@
+harnessApiVersion: '1.0'
+type: DOCKER
+url: https://index.docker.io/v2/
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      entityNames:
+      - PCF-App
+      filterType: SELECTED
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+  - appFilter:
+      entityNames:
+      - PCF-App
+      filterType: SELECTED
+    envFilter:
+      filterTypes:
+      - NON_PROD

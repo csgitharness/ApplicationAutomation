@@ -1,0 +1,16 @@
+harnessApiVersion: '1.0'
+type: DYNA_TRACE
+apiToken: safeharness:byQLfefgS427tOnyzSrpcw
+dynaTraceUrl: https://lvd51754.live.dynatrace.com
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD

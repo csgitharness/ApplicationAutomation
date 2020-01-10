@@ -1,0 +1,17 @@
+harnessApiVersion: '1.0'
+type: HTTP_HELM_REPO
+password: azurevault:pXE5EA9dRySqah98JF9R-Q
+url: https://kubernetes-charts.storage.googleapis.com/
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+username: venkat.padmanabhan@harness.io

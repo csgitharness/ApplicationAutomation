@@ -1,0 +1,17 @@
+harnessApiVersion: '1.0'
+type: ARTIFACTORY
+password: amazonkms:suTDi_bnQ8GKD4alSx421g
+url: https://harness.jfrog.io/harness
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+username: admin

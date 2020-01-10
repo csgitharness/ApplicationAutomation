@@ -1,0 +1,16 @@
+harnessApiVersion: '1.0'
+type: KUBERNETES_CLUSTER
+delegateName: blackbelt-crasher
+masterUrl: test.com
+serviceAccountToken: amazonkms:qUmD9A9WRqmr0wUtUFyPXg
+skipValidation: false
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      entityNames:
+      - referenceRegulated
+      filterType: SELECTED
+    envFilter:
+      filterTypes:
+      - PROD
+useKubernetesDelegate: false

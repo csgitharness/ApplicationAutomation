@@ -1,0 +1,18 @@
+harnessApiVersion: '1.0'
+type: APP_DYNAMICS
+accountName: harness-test
+controllerUrl: https://harness-test.saas.appdynamics.com/controller
+password: safeharness:Ecxox9CyQwW2bJ5hDSfpvQ
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+username: uitest@harness.io

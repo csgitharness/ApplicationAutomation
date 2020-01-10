@@ -1,0 +1,17 @@
+harnessApiVersion: '1.0'
+type: SUMO
+accessId: safeharness:kzmi2l8tQy-mfMJXNyOuKg
+accessKey: safeharness:U1IL9AHIQB2GCVwUMMcL6w
+sumoUrl: https://api.us2.sumologic.com/api/v1/
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD

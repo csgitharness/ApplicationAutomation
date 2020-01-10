@@ -1,0 +1,19 @@
+harnessApiVersion: '1.0'
+type: KUBERNETES_CLUSTER
+delegateName: aws-ec2-k3s-delegate
+password: amazonkms:GN2IZy_uRSuSxpMI0hot0A
+skipValidation: false
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+useKubernetesDelegate: true
+username: venkat.padmanabhan@harness.io

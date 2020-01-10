@@ -1,0 +1,30 @@
+harnessApiVersion: '1.0'
+type: SPOT_INST
+spotInstAccountId: act-d48a11cf
+spotInstToken: amazonkms:SeVY0N6dRiunBzOwCtWJzw
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      entityNames:
+      - PCF-App
+      filterType: SELECTED
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+  - appFilter:
+      entityNames:
+      - PCF-App
+      filterType: SELECTED
+    envFilter:
+      filterTypes:
+      - NON_PROD

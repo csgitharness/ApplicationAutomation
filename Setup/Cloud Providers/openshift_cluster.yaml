@@ -1,0 +1,19 @@
+harnessApiVersion: '1.0'
+type: KUBERNETES_CLUSTER
+delegateName: harness-bb-venkat
+password: amazonkms:cIk3kxXrQ1q3OhpghtJJxQ
+skipValidation: false
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+useKubernetesDelegate: true
+username: venkat.padmanabhan@harness.io

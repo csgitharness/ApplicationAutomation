@@ -1,0 +1,17 @@
+harnessApiVersion: '1.0'
+type: AZURE
+clientId: 15d90142-1594-4bee-8266-1758d432cac6
+key: amazonkms:P7F8d5p-QwmRHZD26HHT5w
+tenantId: 902ce9bd-e39e-4972-8a0c-5a4e39b96bd8
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
